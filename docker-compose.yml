@@ -1,0 +1,41 @@
+
+version: '3'
+
+services:
+
+    lumen:
+      image: laravel:latest
+      build:
+        context: .
+        args:
+          - "BUILD_ARGUMENT_ENV=dev"
+          - "BUILD_ARGUMENT_DEBUG_ENABLED=false"
+        dockerfile: ./Dockerfile
+      container_name: lumenauth
+      expose:
+        - "80"
+        - "443"
+      ports:
+        - "88:80"
+        - "443:443"
+      volumes:
+        - .:/var/www/html
+      depends_on:
+        - mysql
+      links:
+        - mysql
+    mysql:
+        image: mysql:5.7
+        container_name: lumenauth-db
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+          - MYSQL_ROOT_PASSWORD=secret
+          - MYSQL_DATABASE=${DB_DATABASE}
+          - MYSQL_USER=${DB_USERNAME}
+          - MYSQL_PASSWORD=${DB_PASSWORD}
+        ports:
+          - 33061:3306
+        volumes:
+          - ./storage/mysql-data:/var/lib/mysql
+          - ./docker/dev/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+  

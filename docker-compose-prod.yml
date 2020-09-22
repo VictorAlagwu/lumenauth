@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+
+    adashi: &laravel-template
+      image: laravel:latest
+      build:
+        context: .
+        args:
+          - "BUILD_ARGUMENT_ENV=prod"
+          - "BUILD_ARGUMENT_DEBUG_ENABLED=false"
+        dockerfile: ./Dockerfile
+      container_name: adashi
+      expose:
+        - 80
+        - 443
+      ports:
+        - 80:80
+        - 443:443
+      depends_on:
+        - mysql
+      links:
+        - mysql
+
+    ### Cron tasks
+    supervisord:
+      <<: *laravel-template
+      container_name: supervisord
+      user: root
+      expose: []
+      ports: []
+      command: ["/usr/bin/supervisord"]
+
+      mysql-db:
+        image: mysql:5.7
+        container_name: mysql-db
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+          - MYSQL_ROOT_PASSWORD=secret
+          - MYSQL_DATABASE=${DB_DATABASE}
+          - MYSQL_USER=${DB_USERNAME}
+          - MYSQL_PASSWORD=${DB_PASSWORD}
+        ports:
+          - 33061:3306
+        volumes:
+          - ./storage/mysql-data:/var/lib/mysql
+          - ./docker/dev/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
