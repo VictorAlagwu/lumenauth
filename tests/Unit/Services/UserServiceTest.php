@@ -58,7 +58,7 @@ class UserServiceTest extends TestCase
 
     public function testLogin(): void
     {
-        $this->markTestIncomplete();
+       
         $user = UserFactory::new()->create();
         $dto = new LoginDto($user->email, $user->password);
 
@@ -70,17 +70,16 @@ class UserServiceTest extends TestCase
 
 
         $response = $this->userService->login($dto);
+
         $this->assertInstanceOf(UserServiceResponseDto::class, $response);
     }
 
     public function testLoginIsInvalid(): void
     {
-        $this->markTestIncomplete();
         $user = UserFactory::new()->create();
         $dto = new LoginDto($user->email, $user->password);
         Auth::shouldReceive('attempt')->once()->andReturn(false);
-        // Auth::shouldReceive('factory')->once()->andReturn();
-        // Auth::shouldReceive('getTTL')->once()->andReturn();
+     
         new UserServiceResponseDto(false, 'sd');
 
         $response = $this->userService->login($dto);

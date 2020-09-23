@@ -33,7 +33,7 @@ class UserService
             $user->toArray(),
             $token,
             'Bearer',
-            Auth::factory()->getTTL() * 60
+            config('jwt.ttl')
         );
     }
 
