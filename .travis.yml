@@ -3,20 +3,26 @@ language: php
 dist: bionic
 
 php:
-- 7.3
+  - 7.3
 
 services:
   - mysql
 
 cache:
-    directories:
-      - node_modules
-      - vendor
-  
+  directories:
+    - node_modules
+    - vendor
+
 before_script:
-- cp .env.travis .env
-- composer self-update
-- composer install --no-interaction
+  - cp .env.travis .env
+  - composer self-update
+  - composer install --no-interaction
 
 script:
-- vendor/bin/phpunit
+  - mkdir -p build/logs
+  - vendor/bin/phpunit
+
+after_success:
+  - travis_retry php vendor/bin/php-coveralls
+  # or enable logging
+  - travis_retry php vendor/bin/php-coveralls -v

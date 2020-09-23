@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1600870807">
-  <project timestamp="1600870807">
+<coverage generated="1600892747">
+  <project timestamp="1600892747">
     <file name="/Users/victor/Sites/lumenauth/app/Console/Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
@@ -94,12 +94,6 @@
       <line num="15" type="stmt" count="0"/>
       <metrics loc="16" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
     </file>
-    <file name="/Users/victor/Sites/lumenauth/app/Exceptions/Database/RepositoryException.php">
-      <class name="App\Exceptions\RepositoryException" namespace="global">
-        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
-      </class>
-      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
-    </file>
     <file name="/Users/victor/Sites/lumenauth/app/Exceptions/Handler.php">
       <class name="App\Exceptions\Handler" namespace="global">
         <metrics complexity="18" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="0" elements="45" coveredelements="0"/>
@@ -150,6 +144,12 @@
       <line num="122" type="method" name="exceptionError" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="124" type="stmt" count="0"/>
       <metrics loc="126" ncloc="98" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="0" elements="45" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Exceptions/RepositoryException.php">
+      <class name="App\Exceptions\RepositoryException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/Users/victor/Sites/lumenauth/app/Http/Controllers/Controller.php">
       <class name="App\Http\Controllers\Controller" namespace="global">
@@ -674,22 +674,22 @@
     </file>
     <file name="/Users/victor/Sites/lumenauth/app/Services/UserService.php">
       <class name="App\Services\UserService" namespace="global">
-        <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="22" coveredelements="22"/>
+        <metrics complexity="5" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="8" elements="22" coveredelements="11"/>
       </class>
-      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="18" type="stmt" count="4"/>
-      <line num="19" type="stmt" count="4"/>
-      <line num="21" type="method" name="login" visibility="public" complexity="2" crap="2" count="2"/>
-      <line num="23" type="stmt" count="2"/>
-      <line num="25" type="stmt" count="2"/>
-      <line num="26" type="stmt" count="1"/>
-      <line num="28" type="stmt" count="1"/>
-      <line num="30" type="stmt" count="1"/>
-      <line num="31" type="stmt" count="1"/>
-      <line num="32" type="stmt" count="1"/>
-      <line num="33" type="stmt" count="1"/>
-      <line num="35" type="stmt" count="1"/>
-      <line num="36" type="stmt" count="1"/>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="18" type="stmt" count="2"/>
+      <line num="19" type="stmt" count="2"/>
+      <line num="21" type="method" name="login" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
       <line num="40" type="method" name="register" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="42" type="stmt" count="1"/>
       <line num="44" type="stmt" count="1"/>
@@ -698,8 +698,8 @@
       <line num="50" type="stmt" count="1"/>
       <line num="53" type="method" name="getUser" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="55" type="stmt" count="1"/>
-      <metrics loc="57" ncloc="57" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="22" coveredelements="22"/>
+      <metrics loc="57" ncloc="57" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="8" elements="22" coveredelements="11"/>
     </file>
-    <metrics files="30" loc="2478" ncloc="1537" classes="23" methods="111" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="414" coveredstatements="18" elements="525" coveredelements="22"/>
+    <metrics files="30" loc="2478" ncloc="1537" classes="23" methods="111" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="414" coveredstatements="8" elements="525" coveredelements="11"/>
   </project>
 </coverage>
