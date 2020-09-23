@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:7.3-apache
 
 LABEL maintainer="Victor Alagwu <victor.alagwu@tm30.net>"
 # set main params

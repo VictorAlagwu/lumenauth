@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1600892747">
-  <project timestamp="1600892747">
+<coverage generated="1600897175">
+  <project timestamp="1600897175">
     <file name="/Users/victor/Sites/lumenauth/app/Console/Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>

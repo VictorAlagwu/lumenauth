@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/VictorAlagwu/lumenauth.svg?branch=master)](https://travis-ci.org/VictorAlagwu/lumenauth)
+[![Code Coverage](https://scrutinizer-ci.com/g/VictorAlagwu/lumenauth/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/VictorAlagwu/lumenauth/?branch=master)
 
-
-[![Coverage Status](https://coveralls.io/repos/github/VictorAlagwu/lumenauth/badge.svg?branch=master)](https://coveralls.io/github/VictorAlagwu/lumenauth?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/VictorAlagwu/lumenauth/badges/build.png?b=master)](https://scrutinizer-ci.com/g/VictorAlagwu/lumenauth/build-status/master)
 
 # SetUp
 
