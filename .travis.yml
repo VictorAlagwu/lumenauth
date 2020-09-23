@@ -17,10 +17,6 @@ before_script:
 - cp .env.travis .env
 - composer self-update
 - composer install --no-interaction
-- php artisan migrate
-
-after_script:
-- php artisan jwt:secret
 
 script:
 - vendor/bin/phpunit
