@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\v1\Auth;
 
+use App\Domain\Dto\Request\User\CreateDto;
 use App\Domain\Helpers\ApiResponse;
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -30,8 +31,8 @@ class RegisterController extends Controller
             if ($validator->fails()) {
                 return ApiResponse::responseValidationError($validator);
             }
-
-            $user = $this->userService->register($request->convertToDto());
+            $dto = new CreateDto($request->name, $request->email, $request->password);
+            $user = $this->userService->register($dto);
             return ApiResponse::responseCreated($user->data, $user->message);
         } catch (\Exception $e) {
             return ApiResponse::responseException($e, 400, 'Unable to register user');

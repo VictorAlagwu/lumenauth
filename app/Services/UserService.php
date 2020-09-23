@@ -2,22 +2,30 @@
 
 namespace App\Services;
 
+use App\Domain\Dto\Request\User\CreateDto;
+use App\Domain\Dto\Request\User\LoginDto;
 use App\Domain\Dto\Value\User\UserServiceResponseDto;
 use App\Models\User;
-use Illuminate\Http\Request;
+use App\Repositories\User\IUserRepository;
 use Illuminate\Support\Facades\Auth;
 
 class UserService
 {
-    //A DTO should be used as request param rather than Request
-    public function login(Request $request): UserServiceResponseDto
-    {
-        $credentials = $request->only(['email', 'password']);
+    protected $userRepository;
 
-        if (!$token = Auth::attempt($credentials)) {
+    public function __construct(IUserRepository $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+
+    public function login(LoginDto $dto): UserServiceResponseDto
+    {
+        $token = Auth::attempt(['email' => $dto->email, 'password' => $dto->password]);
+
+        if (!$token) {
             return new UserServiceResponseDto(false, 'Invalid credentials');
         }
-        $user = User::find(Auth::user()->id);
+        $user = $this->userRepository->find(Auth::user()->id);
 
         return new UserServiceResponseDto(
             true,
@@ -29,20 +37,21 @@ class UserService
         );
     }
 
-    public function register(Request $request): UserServiceResponseDto
+    public function register(CreateDto $dto): UserServiceResponseDto
     {
-        $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = app('hash')->make($request->password);
+        $user = $this->userRepository->create(
+            [
+                'name' => $dto->name,
+                'email' => $dto->email,
+                'password' => app('hash')->make($dto->password)
+            ]
+        );
 
-        $user->save();
-
-        return new UserServiceResponseDto(true, 'New user registered');
+        return new UserServiceResponseDto(true, 'New user registered', $user->toArray());
     }
 
     public function getUser(string $userId): ?User
     {
-        return User::where('id', $userId)->first();
+        return $this->userRepository->findOrFail($userId);
     }
 }

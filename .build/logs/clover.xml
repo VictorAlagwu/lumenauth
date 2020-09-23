@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1600870807">
+  <project timestamp="1600870807">
+    <file name="/Users/victor/Sites/lumenauth/app/Console/Kernel.php">
+      <class name="App\Console\Kernel" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Domain/Dto/Request/User/CreateDto.php">
+      <class name="App\Domain\Dto\Request\User\CreateDto" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Domain/Dto/Request/User/LoginDto.php">
+      <class name="App\Domain\Dto\Request\User\LoginDto" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Domain/Dto/Value/User/UserServiceResponseDto.php">
+      <class name="App\Domain\Dto\Value\User\UserServiceResponseDto" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="25" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <metrics loc="40" ncloc="29" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Domain/Helpers/ApiResponse.php">
+      <class name="App\Domain\Helpers\ApiResponse" namespace="global">
+        <metrics complexity="12" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="30" coveredelements="0"/>
+      </class>
+      <line num="11" type="method" name="respond" visibility="protected" complexity="3" crap="12" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="26" type="method" name="responseSuccess" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="31" type="method" name="responseCreated" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="36" type="method" name="responseNoContent" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="40" type="method" name="responseError" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="45" type="method" name="responseUnauthorized" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="50" type="method" name="responseFobidden" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="55" type="method" name="responseValidationError" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="59" type="stmt" count="0"/>
+      <line num="61" type="stmt" count="0"/>
+      <line num="68" type="method" name="responseException" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="71" type="stmt" count="0"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="74" type="stmt" count="0"/>
+      <metrics loc="76" ncloc="72" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="30" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Events/Event.php">
+      <class name="App\Events\Event" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Events/ExampleEvent.php">
+      <class name="App\Events\ExampleEvent" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <metrics loc="16" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Exceptions/Database/RepositoryException.php">
+      <class name="App\Exceptions\RepositoryException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Exceptions/Handler.php">
+      <class name="App\Exceptions\Handler" namespace="global">
+        <metrics complexity="18" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="0" elements="45" coveredelements="0"/>
+      </class>
+      <line num="45" type="method" name="report" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="59" type="method" name="render" visibility="public" complexity="16" crap="272" count="0"/>
+      <line num="61" type="stmt" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="63" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="67" type="stmt" count="0"/>
+      <line num="68" type="stmt" count="0"/>
+      <line num="69" type="stmt" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="73" type="stmt" count="0"/>
+      <line num="74" type="stmt" count="0"/>
+      <line num="75" type="stmt" count="0"/>
+      <line num="76" type="stmt" count="0"/>
+      <line num="77" type="stmt" count="0"/>
+      <line num="80" type="stmt" count="0"/>
+      <line num="81" type="stmt" count="0"/>
+      <line num="82" type="stmt" count="0"/>
+      <line num="83" type="stmt" count="0"/>
+      <line num="84" type="stmt" count="0"/>
+      <line num="86" type="stmt" count="0"/>
+      <line num="87" type="stmt" count="0"/>
+      <line num="88" type="stmt" count="0"/>
+      <line num="89" type="stmt" count="0"/>
+      <line num="90" type="stmt" count="0"/>
+      <line num="92" type="stmt" count="0"/>
+      <line num="93" type="stmt" count="0"/>
+      <line num="94" type="stmt" count="0"/>
+      <line num="95" type="stmt" count="0"/>
+      <line num="96" type="stmt" count="0"/>
+      <line num="99" type="stmt" count="0"/>
+      <line num="100" type="stmt" count="0"/>
+      <line num="101" type="stmt" count="0"/>
+      <line num="102" type="stmt" count="0"/>
+      <line num="104" type="stmt" count="0"/>
+      <line num="107" type="stmt" count="0"/>
+      <line num="108" type="stmt" count="0"/>
+      <line num="109" type="stmt" count="0"/>
+      <line num="110" type="stmt" count="0"/>
+      <line num="112" type="stmt" count="0"/>
+      <line num="115" type="stmt" count="0"/>
+      <line num="122" type="method" name="exceptionError" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="124" type="stmt" count="0"/>
+      <metrics loc="126" ncloc="98" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="0" elements="45" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Controllers/Controller.php">
+      <class name="App\Http\Controllers\Controller" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="10" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Controllers/ExampleController.php">
+      <class name="App\Http\Controllers\ExampleController" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <metrics loc="18" ncloc="12" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Controllers/v1/Auth/LoginController.php">
+      <class name="App\Http\Controllers\v1\Auth\LoginController" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="16" coveredelements="0"/>
+      </class>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="method" name="authenticate" visibility="public" complexity="3" crap="12" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <metrics loc="46" ncloc="46" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="16" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Controllers/v1/Auth/RegisterController.php">
+      <class name="App\Http\Controllers\v1\Auth\RegisterController" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="13" coveredelements="0"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="22" type="method" name="store" visibility="public" complexity="3" crap="12" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <metrics loc="41" ncloc="41" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="13" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Controllers/v1/UserController.php">
+      <class name="App\Http\Controllers\v1\UserController" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="21" type="method" name="index" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <metrics loc="26" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Middleware/Authenticate.php">
+      <class name="App\Http\Middleware\Authenticate" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
+      </class>
+      <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="36" type="method" name="handle" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <metrics loc="44" ncloc="25" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Http/Middleware/ExampleMiddleware.php">
+      <class name="App\Http\Middleware\ExampleMiddleware" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <metrics loc="20" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Jobs/ExampleJob.php">
+      <class name="App\Jobs\ExampleJob" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="22" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <metrics loc="26" ncloc="16" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Jobs/Job.php">
+      <class name="App\Jobs\Job" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="24" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Listeners/ExampleListener.php">
+      <class name="App\Listeners\ExampleListener" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="27" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <metrics loc="31" ncloc="20" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Models/ModelTraits/UsesUuid.php">
+      <class name="App\Models\ModelTraits\UsesUuid" namespace="global">
+        <metrics complexity="4" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="10" coveredelements="0"/>
+      </class>
+      <line num="10" type="method" name="bootUsesUuid" visibility="protected" complexity="2" crap="6" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="19" type="method" name="getIncrementing" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="24" type="method" name="getKeyType" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="28" ncloc="28" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="10" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Models/User.php">
+      <class name="App\Models\User" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="48" type="method" name="getJWTIdentifier" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="58" type="method" name="getJWTCustomClaims" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <metrics loc="62" ncloc="42" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Providers/AppServiceProvider.php">
+      <class name="App\Providers\AppServiceProvider" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="14" type="method" name="register" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="20" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Providers/AuthServiceProvider.php">
+      <class name="App\Providers\AuthServiceProvider" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="26" type="method" name="boot" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <metrics loc="39" ncloc="29" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Providers/EventServiceProvider.php">
+      <class name="App\Providers\EventServiceProvider" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="19" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Providers/RepositoryServiceProvider.php">
+      <class name="App\Providers\RepositoryServiceProvider" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
+      </class>
+      <line num="17" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="27" type="method" name="boot" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <metrics loc="31" ncloc="21" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Repositories/BaseRepository.php">
+      <class name="App\Repositories\BaseRepository" namespace="global">
+        <metrics complexity="99" methods="65" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="255" coveredstatements="0" elements="320" coveredelements="0"/>
+      </class>
+      <line num="40" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="51" type="method" name="makeModel" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="56" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="77" type="method" name="scopeQuery" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="79" type="stmt" count="0"/>
+      <line num="81" type="stmt" count="0"/>
+      <line num="92" type="method" name="lists" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="94" type="stmt" count="0"/>
+      <line num="97" type="method" name="join" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="99" type="stmt" count="0"/>
+      <line num="101" type="stmt" count="0"/>
+      <line num="104" type="method" name="leftJoin" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="106" type="stmt" count="0"/>
+      <line num="108" type="stmt" count="0"/>
+      <line num="120" type="method" name="pluck" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="122" type="stmt" count="0"/>
+      <line num="123" type="stmt" count="0"/>
+      <line num="124" type="stmt" count="0"/>
+      <line num="126" type="stmt" count="0"/>
+      <line num="136" type="method" name="all" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="138" type="stmt" count="0"/>
+      <line num="140" type="stmt" count="0"/>
+      <line num="141" type="stmt" count="0"/>
+      <line num="143" type="stmt" count="0"/>
+      <line num="146" type="stmt" count="0"/>
+      <line num="147" type="stmt" count="0"/>
+      <line num="149" type="stmt" count="0"/>
+      <line num="156" type="method" name="resetModel" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="158" type="stmt" count="0"/>
+      <line num="159" type="stmt" count="0"/>
+      <line num="166" type="method" name="resetScope" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="168" type="stmt" count="0"/>
+      <line num="170" type="stmt" count="0"/>
+      <line num="180" type="method" name="first" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="182" type="stmt" count="0"/>
+      <line num="184" type="stmt" count="0"/>
+      <line num="186" type="stmt" count="0"/>
+      <line num="188" type="stmt" count="0"/>
+      <line num="198" type="method" name="last" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="200" type="stmt" count="0"/>
+      <line num="202" type="stmt" count="0"/>
+      <line num="204" type="stmt" count="0"/>
+      <line num="206" type="stmt" count="0"/>
+      <line num="217" type="method" name="firstOrCreate" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="219" type="stmt" count="0"/>
+      <line num="221" type="stmt" count="0"/>
+      <line num="223" type="stmt" count="0"/>
+      <line num="225" type="stmt" count="0"/>
+      <line num="236" type="method" name="updateOrCreate" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="238" type="stmt" count="0"/>
+      <line num="240" type="stmt" count="0"/>
+      <line num="242" type="stmt" count="0"/>
+      <line num="244" type="stmt" count="0"/>
+      <line num="255" type="method" name="simplePaginate" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="257" type="stmt" count="0"/>
+      <line num="269" type="method" name="paginate" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="271" type="stmt" count="0"/>
+      <line num="272" type="stmt" count="0"/>
+      <line num="273" type="stmt" count="0"/>
+      <line num="274" type="stmt" count="0"/>
+      <line num="275" type="stmt" count="0"/>
+      <line num="277" type="stmt" count="0"/>
+      <line num="289" type="method" name="findByField" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="291" type="stmt" count="0"/>
+      <line num="292" type="stmt" count="0"/>
+      <line num="293" type="stmt" count="0"/>
+      <line num="295" type="stmt" count="0"/>
+      <line num="303" type="method" name="orWhere" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="305" type="stmt" count="0"/>
+      <line num="307" type="stmt" count="0"/>
+      <line num="318" type="method" name="findWhere" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="320" type="stmt" count="0"/>
+      <line num="322" type="stmt" count="0"/>
+      <line num="324" type="stmt" count="0"/>
+      <line num="325" type="stmt" count="0"/>
+      <line num="327" type="stmt" count="0"/>
+      <line num="330" type="method" name="findOne" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="332" type="stmt" count="0"/>
+      <line num="334" type="stmt" count="0"/>
+      <line num="336" type="stmt" count="0"/>
+      <line num="338" type="stmt" count="0"/>
+      <line num="340" type="stmt" count="0"/>
+      <line num="352" type="method" name="findWhereIn" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="354" type="stmt" count="0"/>
+      <line num="355" type="stmt" count="0"/>
+      <line num="356" type="stmt" count="0"/>
+      <line num="358" type="stmt" count="0"/>
+      <line num="370" type="method" name="findWhereNotIn" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="372" type="stmt" count="0"/>
+      <line num="373" type="stmt" count="0"/>
+      <line num="374" type="stmt" count="0"/>
+      <line num="376" type="stmt" count="0"/>
+      <line num="387" type="method" name="orderBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="389" type="stmt" count="0"/>
+      <line num="391" type="stmt" count="0"/>
+      <line num="398" type="method" name="orderByRaw" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="400" type="stmt" count="0"/>
+      <line num="402" type="stmt" count="0"/>
+      <line num="413" type="method" name="whereHas" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="415" type="stmt" count="0"/>
+      <line num="417" type="stmt" count="0"/>
+      <line num="428" type="method" name="orWhereHas" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="430" type="stmt" count="0"/>
+      <line num="432" type="stmt" count="0"/>
+      <line num="443" type="method" name="whereDoesntHave" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="445" type="stmt" count="0"/>
+      <line num="447" type="stmt" count="0"/>
+      <line num="457" type="method" name="has" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="459" type="stmt" count="0"/>
+      <line num="461" type="stmt" count="0"/>
+      <line num="471" type="method" name="with" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="473" type="stmt" count="0"/>
+      <line num="475" type="stmt" count="0"/>
+      <line num="485" type="method" name="withCount" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="487" type="stmt" count="0"/>
+      <line num="489" type="stmt" count="0"/>
+      <line num="499" type="method" name="create" visibility="public" complexity="5" crap="30" count="0"/>
+      <line num="501" type="stmt" count="0"/>
+      <line num="502" type="stmt" count="0"/>
+      <line num="503" type="stmt" count="0"/>
+      <line num="505" type="stmt" count="0"/>
+      <line num="506" type="stmt" count="0"/>
+      <line num="507" type="stmt" count="0"/>
+      <line num="508" type="stmt" count="0"/>
+      <line num="511" type="stmt" count="0"/>
+      <line num="512" type="stmt" count="0"/>
+      <line num="515" type="stmt" count="0"/>
+      <line num="516" type="stmt" count="0"/>
+      <line num="518" type="stmt" count="0"/>
+      <line num="521" type="method" name="insert" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="523" type="stmt" count="0"/>
+      <line num="525" type="stmt" count="0"/>
+      <line num="527" type="stmt" count="0"/>
+      <line num="530" type="method" name="save" visibility="public" complexity="5" crap="30" count="0"/>
+      <line num="532" type="stmt" count="0"/>
+      <line num="533" type="stmt" count="0"/>
+      <line num="534" type="stmt" count="0"/>
+      <line num="536" type="stmt" count="0"/>
+      <line num="537" type="stmt" count="0"/>
+      <line num="538" type="stmt" count="0"/>
+      <line num="539" type="stmt" count="0"/>
+      <line num="542" type="stmt" count="0"/>
+      <line num="543" type="stmt" count="0"/>
+      <line num="546" type="stmt" count="0"/>
+      <line num="548" type="stmt" count="0"/>
+      <line num="550" type="stmt" count="0"/>
+      <line num="561" type="method" name="update" visibility="public" complexity="6" crap="42" count="0"/>
+      <line num="563" type="stmt" count="0"/>
+      <line num="564" type="stmt" count="0"/>
+      <line num="566" type="stmt" count="0"/>
+      <line num="567" type="stmt" count="0"/>
+      <line num="569" type="stmt" count="0"/>
+      <line num="570" type="stmt" count="0"/>
+      <line num="571" type="stmt" count="0"/>
+      <line num="573" type="stmt" count="0"/>
+      <line num="575" type="stmt" count="0"/>
+      <line num="576" type="stmt" count="0"/>
+      <line num="577" type="stmt" count="0"/>
+      <line num="580" type="stmt" count="0"/>
+      <line num="581" type="stmt" count="0"/>
+      <line num="584" type="stmt" count="0"/>
+      <line num="585" type="stmt" count="0"/>
+      <line num="587" type="stmt" count="0"/>
+      <line num="590" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="592" type="stmt" count="0"/>
+      <line num="594" type="stmt" count="0"/>
+      <line num="596" type="stmt" count="0"/>
+      <line num="597" type="stmt" count="0"/>
+      <line num="599" type="stmt" count="0"/>
+      <line num="602" type="method" name="updateWhereIn" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="604" type="stmt" count="0"/>
+      <line num="606" type="stmt" count="0"/>
+      <line num="607" type="stmt" count="0"/>
+      <line num="609" type="stmt" count="0"/>
+      <line num="619" type="method" name="delete" visibility="public" complexity="5" crap="30" count="0"/>
+      <line num="621" type="stmt" count="0"/>
+      <line num="623" type="stmt" count="0"/>
+      <line num="624" type="stmt" count="0"/>
+      <line num="626" type="stmt" count="0"/>
+      <line num="627" type="stmt" count="0"/>
+      <line num="628" type="stmt" count="0"/>
+      <line num="629" type="stmt" count="0"/>
+      <line num="631" type="stmt" count="0"/>
+      <line num="634" type="stmt" count="0"/>
+      <line num="644" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="646" type="stmt" count="0"/>
+      <line num="647" type="stmt" count="0"/>
+      <line num="648" type="stmt" count="0"/>
+      <line num="650" type="stmt" count="0"/>
+      <line num="661" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="663" type="stmt" count="0"/>
+      <line num="664" type="stmt" count="0"/>
+      <line num="665" type="stmt" count="0"/>
+      <line num="667" type="stmt" count="0"/>
+      <line num="670" type="method" name="having" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="673" type="stmt" count="0"/>
+      <line num="675" type="stmt" count="0"/>
+      <line num="678" type="method" name="havingRaw" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="681" type="stmt" count="0"/>
+      <line num="683" type="stmt" count="0"/>
+      <line num="695" type="method" name="deleteWhere" visibility="public" complexity="5" crap="30" count="0"/>
+      <line num="697" type="stmt" count="0"/>
+      <line num="699" type="stmt" count="0"/>
+      <line num="701" type="stmt" count="0"/>
+      <line num="702" type="stmt" count="0"/>
+      <line num="703" type="stmt" count="0"/>
+      <line num="704" type="stmt" count="0"/>
+      <line num="706" type="stmt" count="0"/>
+      <line num="709" type="stmt" count="0"/>
+      <line num="711" type="stmt" count="0"/>
+      <line num="722" type="method" name="deleteWhereIn" visibility="public" complexity="5" crap="30" count="0"/>
+      <line num="724" type="stmt" count="0"/>
+      <line num="726" type="stmt" count="0"/>
+      <line num="728" type="stmt" count="0"/>
+      <line num="729" type="stmt" count="0"/>
+      <line num="730" type="stmt" count="0"/>
+      <line num="731" type="stmt" count="0"/>
+      <line num="733" type="stmt" count="0"/>
+      <line num="736" type="stmt" count="0"/>
+      <line num="738" type="stmt" count="0"/>
+      <line num="746" type="method" name="where" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="748" type="stmt" count="0"/>
+      <line num="750" type="stmt" count="0"/>
+      <line num="758" type="method" name="whereBetween" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="760" type="stmt" count="0"/>
+      <line num="762" type="stmt" count="0"/>
+      <line num="770" type="method" name="orWhereBetween" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="772" type="stmt" count="0"/>
+      <line num="774" type="stmt" count="0"/>
+      <line num="783" type="method" name="whereRaw" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="785" type="stmt" count="0"/>
+      <line num="787" type="stmt" count="0"/>
+      <line num="796" type="method" name="whereIn" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="798" type="stmt" count="0"/>
+      <line num="800" type="stmt" count="0"/>
+      <line num="809" type="method" name="whereNotIn" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="811" type="stmt" count="0"/>
+      <line num="813" type="stmt" count="0"/>
+      <line num="823" type="method" name="get" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="825" type="stmt" count="0"/>
+      <line num="827" type="stmt" count="0"/>
+      <line num="829" type="stmt" count="0"/>
+      <line num="831" type="stmt" count="0"/>
+      <line num="842" type="method" name="skipAndTake" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="844" type="stmt" count="0"/>
+      <line num="846" type="stmt" count="0"/>
+      <line num="855" type="method" name="limit" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="857" type="stmt" count="0"/>
+      <line num="859" type="stmt" count="0"/>
+      <line num="868" type="method" name="count" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="870" type="stmt" count="0"/>
+      <line num="872" type="stmt" count="0"/>
+      <line num="874" type="stmt" count="0"/>
+      <line num="876" type="stmt" count="0"/>
+      <line num="885" type="method" name="sum" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="887" type="stmt" count="0"/>
+      <line num="889" type="stmt" count="0"/>
+      <line num="891" type="stmt" count="0"/>
+      <line num="893" type="stmt" count="0"/>
+      <line num="896" type="method" name="increment" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="898" type="stmt" count="0"/>
+      <line num="900" type="stmt" count="0"/>
+      <line num="902" type="stmt" count="0"/>
+      <line num="904" type="stmt" count="0"/>
+      <line num="907" type="method" name="decrement" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="909" type="stmt" count="0"/>
+      <line num="911" type="stmt" count="0"/>
+      <line num="913" type="stmt" count="0"/>
+      <line num="915" type="stmt" count="0"/>
+      <line num="918" type="method" name="distinct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="920" type="stmt" count="0"/>
+      <line num="922" type="stmt" count="0"/>
+      <line num="925" type="method" name="groupBy" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="927" type="stmt" count="0"/>
+      <line num="929" type="stmt" count="0"/>
+      <line num="932" type="method" name="groupByMultiple" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="934" type="stmt" count="0"/>
+      <line num="936" type="stmt" count="0"/>
+      <line num="946" type="method" name="countGreaterThanOrEqualTo" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="948" type="stmt" count="0"/>
+      <line num="950" type="stmt" count="0"/>
+      <line num="952" type="stmt" count="0"/>
+      <line num="954" type="stmt" count="0"/>
+      <line num="963" type="method" name="attachRelation" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="965" type="stmt" count="0"/>
+      <line num="967" type="stmt" count="0"/>
+      <line num="969" type="stmt" count="0"/>
+      <line num="979" type="method" name="findMaxValueWhere" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="981" type="stmt" count="0"/>
+      <line num="983" type="stmt" count="0"/>
+      <line num="985" type="stmt" count="0"/>
+      <line num="987" type="stmt" count="0"/>
+      <line num="989" type="stmt" count="0"/>
+      <line num="991" type="stmt" count="0"/>
+      <line num="999" type="method" name="applyScope" visibility="protected" complexity="3" crap="12" count="0"/>
+      <line num="1001" type="stmt" count="0"/>
+      <line num="1002" type="stmt" count="0"/>
+      <line num="1003" type="stmt" count="0"/>
+      <line num="1006" type="stmt" count="0"/>
+      <line num="1015" type="method" name="applyConditions" visibility="protected" complexity="3" crap="12" count="0"/>
+      <line num="1017" type="stmt" count="0"/>
+      <line num="1018" type="stmt" count="0"/>
+      <line num="1019" type="stmt" count="0"/>
+      <line num="1020" type="stmt" count="0"/>
+      <line num="1022" type="stmt" count="0"/>
+      <line num="1025" type="stmt" count="0"/>
+      <line num="1030" type="method" name="applyConditionsOr" visibility="protected" complexity="3" crap="12" count="0"/>
+      <line num="1032" type="stmt" count="0"/>
+      <line num="1033" type="stmt" count="0"/>
+      <line num="1034" type="stmt" count="0"/>
+      <line num="1035" type="stmt" count="0"/>
+      <line num="1037" type="stmt" count="0"/>
+      <line num="1040" type="stmt" count="0"/>
+      <metrics loc="1041" ncloc="675" classes="1" methods="65" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="255" coveredstatements="0" elements="320" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Repositories/IBaseRepository.php">
+      <metrics loc="525" ncloc="128" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Repositories/User/IUserRepository.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Repositories/User/UserRepository.php">
+      <class name="App\Repositories\User\UserRepository" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="16" type="method" name="model" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <metrics loc="20" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Users/victor/Sites/lumenauth/app/Services/UserService.php">
+      <class name="App\Services\UserService" namespace="global">
+        <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="22" coveredelements="22"/>
+      </class>
+      <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="18" type="stmt" count="4"/>
+      <line num="19" type="stmt" count="4"/>
+      <line num="21" type="method" name="login" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="40" type="method" name="register" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="53" type="method" name="getUser" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="55" type="stmt" count="1"/>
+      <metrics loc="57" ncloc="57" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="22" coveredelements="22"/>
+    </file>
+    <metrics files="30" loc="2478" ncloc="1537" classes="23" methods="111" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="414" coveredstatements="18" elements="525" coveredelements="22"/>
+  </project>
+</coverage>

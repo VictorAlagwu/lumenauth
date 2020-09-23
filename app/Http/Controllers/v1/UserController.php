@@ -21,6 +21,6 @@ class UserController extends Controller
     public function index()
     {
         $user = $this->userService->getUser(request()->user()->id);
-        return ApiResponse::responseSuccess($user->data ?? [], 'User\'s details');
+        return ApiResponse::responseSuccess($user->toArray() ?? [], 'User\'s details');
     }
 }

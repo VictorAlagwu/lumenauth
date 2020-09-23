@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\v1\Auth;
 
+use App\Domain\Dto\Request\User\LoginDto;
 use App\Domain\Helpers\ApiResponse;
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -29,7 +30,9 @@ class LoginController extends Controller
         if ($validator->fails()) {
             return ApiResponse::responseValidationError($validator);
         }
-        $response = $this->userService->login($request);
+        $dto = new LoginDto($request->email, $request->password);
+        
+        $response = $this->userService->login($dto);
         if (!$response->status) {
             return ApiResponse::responseError([], $response->message);
         }
