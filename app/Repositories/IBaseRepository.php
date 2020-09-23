@@ -18,24 +18,6 @@ interface IBaseRepository
     public function scopeQuery(\Closure $scope);
 
     /**
-     * @param string $relationship
-     * @param string $column1
-     * @param string $operator
-     * @param string $column2
-     * @return mixed
-     */
-    public function join(string $relationship, string $column1, string $operator, string $column2);
-
-    /**
-     * @param string $relationship
-     * @param string $column1
-     * @param string $operator
-     * @param string $column2
-     * @return mixed
-     */
-    public function leftJoin(string $relationship, string $column1, string $operator, string $column2);
-
-    /**
      * Reset Query Scope
      *
      * @return $this
@@ -133,26 +115,6 @@ interface IBaseRepository
      */
     public function firstOrCreate(array $where, array $attributes = []);
 
-    /**
-     * Retrieve all data of repository, simple paginated
-     *
-     * @param null  $limit
-     * @param array $columns
-     *
-     * @return mixed
-     */
-    public function simplePaginate($limit = null, $columns = ['*']);
-
-    /**
-     * Retrieve all data of repository, paginated
-     *
-     * @param null   $limit
-     * @param array  $columns
-     * @param string $method
-     *
-     * @return mixed
-     */
-    public function paginate($limit = null, $columns = ['*'], $method = "paginate");
 
     /**
      * Find data by field and value
@@ -175,36 +137,6 @@ interface IBaseRepository
      */
     public function findWhere(array $where, $columns = ['*']);
 
-    /**
-     * Find data by multiple values in one field
-     *
-     * @param       $field
-     * @param       $values
-     * @param array $columns
-     *
-     * @return mixed
-     */
-    public function findWhereIn($field, $values, $columns = ['*']);
-
-    /**
-     * Find data by multiple values in one field (chaining)
-     *
-     * @param string           $field
-     * @param array|Collection $values
-     *
-     * @return mixed
-     */
-    public function whereIn(string $field, $values);
-
-    /**
-     * Find data by multiple values in one field (chaining)
-     *
-     * @param string           $field
-     * @param array|Collection $values
-     *
-     * @return mixed
-     */
-    public function whereNotIn(string $field, $values);
 
     /**
      * Find data by excluding multiple values in one field
@@ -282,15 +214,6 @@ interface IBaseRepository
     public function with($relations);
 
     /**
-     * Get count of relation
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     * @return mixed
-     */
-    public function withCount(string $relation, \Closure $closure = null);
-
-    /**
      * Save a new entity in repository
      *
      * @param $args
@@ -315,45 +238,7 @@ interface IBaseRepository
      * @return mixed
      * @throws RepositoryException
      */
-    public function save($args): bool;
-
-    /**
-     * GroupBy
-     * @param $field
-     * @return mixed
-     */
-    public function groupBy($field);
-
-    /**
-     * GroupBy Multiple
-     * @return mixed
-     */
-    public function groupByMultiple();
-
-    /**
-     * @param $field
-     * @return mixed
-     */
-    public function sum($field);
-
-    /**
-     * @param $field
-     * @param $value
-     * @return mixed
-     */
-    public function increment($field, $value);
-
-    /**
-     * @param $field
-     * @param $value
-     * @return mixed
-     */
-    public function decrement($field, $value);
-
-    /**
-     * @return mixed
-     */
-    public function distinct();
+    public function save($args): bool;  
 
     /**
      * Update a entity in repository by id
@@ -376,16 +261,6 @@ interface IBaseRepository
     public function updateWhere(array $where, $updateArgs): bool;
 
     /**
-     * Update a entity in repository by where clause.
-     *
-     * @param string $field
-     * @param array  $values
-     * @param array  $updateArgs
-     * @return bool
-     */
-    public function updateWhereIn(string $field, $values, $updateArgs): bool;
-
-    /**
      * Delete a entity in repository by id
      *
      * @param $id
@@ -394,13 +269,6 @@ interface IBaseRepository
      */
     public function delete($id, bool $softDelete = false);
 
-    /**
-     * Counts the query results
-     *
-     * @return mixed
-     * @throws RepositoryException
-     */
-    public function count();
 
     /**
      * Delete multiple entities by given criteria.
@@ -411,13 +279,6 @@ interface IBaseRepository
      */
     public function deleteWhere(array $where, bool $softDelete = false);
 
-    /**
-     * @param string $field
-     * @param array  $values
-     * @param bool   $softDelete
-     * @return mixed
-     */
-    public function deleteWhereIn(string $field, $values, bool $softDelete = false);
 
     /**
      * Find data and return instance of self for chaining
@@ -466,15 +327,6 @@ interface IBaseRepository
     public function get($columns = ['*']);
 
     /**
-     * Add offset and limit to query.
-     *
-     * @param $offset
-     * @param @limit
-     * @return IBaseRepository
-     */
-    public function skipAndTake($offset, $limit): IBaseRepository;
-
-    /**
      * Limit results
      *
      * @param $limit
@@ -482,13 +334,7 @@ interface IBaseRepository
      */
     public function limit($limit): IBaseRepository;
 
-    /**
-     * Check if the model count is greater than value
-     * @param int $value
-     * @return bool
-     */
-    public function countGreaterThanOrEqualTo(int $value): bool;
-
+ 
     /**
      * Find first model where conditions are met
      *
@@ -498,28 +344,4 @@ interface IBaseRepository
      */
     public function findOne(array $where, $columns = ['*']);
 
-    /**
-     * Update an existing model or create a new model
-     *
-     * @param array $where
-     * @param array $values
-     * @return mixed
-     */
-    public function updateOrCreate(array $where, array $values);
-
-    /**
-     * Insert relationship properties into pivot
-     *
-     * @param string $relation
-     * @param array  $id
-     * @return mixed
-     */
-    public function attachRelation(string $relation, int $id);
-
-    /**
-     * @param array  $where
-     * @param string $column
-     * @return mixed
-     */
-    public function findMaxValueWhere(array $where, string $column);
 }
