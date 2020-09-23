@@ -89,7 +89,6 @@ class UserServiceTest extends TestCase
 
     public function testRegister(): void
     {
-        $this->markTestIncomplete();
         $dto = new CreateDto('test', 'email@mail.com', 'ds');
         $dto->password = app('hash')->make($dto->password);
 
