@@ -4,8 +4,8 @@ namespace App\Domain\Dto\Request\User;
 
 class LoginDto
 {
-    public string $email;
-    public string $password;
+    public $email;
+    public $password;
 
     public function __construct(
         string $email,

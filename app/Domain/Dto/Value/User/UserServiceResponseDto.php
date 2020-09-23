@@ -7,12 +7,12 @@ namespace App\Domain\Dto\Value\User;
  */
 class UserServiceResponseDto
 {
-    public bool $status;
-    public string $message;
-    public ?array $data;
-    public ?bool $token;
-    public ?string $token_type;
-    public ?int $expires_in;
+    public $status;
+    public $message;
+    public $data;
+    public $token;
+    public $token_type;
+    public $expires_in;
 
     /**
      * @param boolean $status

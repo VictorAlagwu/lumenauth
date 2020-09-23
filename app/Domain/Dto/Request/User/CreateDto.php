@@ -4,9 +4,9 @@ namespace App\Domain\Dto\Request\User;
 
 class CreateDto
 {
-    public string $name;
-    public string $email;
-    public string $password;
+    public $name;
+    public $email;
+    public $password;
 
     public function __construct(
         string $name,
