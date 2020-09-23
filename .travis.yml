@@ -14,6 +14,7 @@ cache:
     - vendor
 
 before_script:
+  - export COMPOSER_MEMORY_LIMIT=-1
   - cp .env.travis .env
   - composer self-update
   - composer install --no-interaction
