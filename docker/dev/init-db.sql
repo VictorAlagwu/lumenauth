@@ -1,2 +1,2 @@
 # create testing database
-CREATE DATABASE IF NOT EXISTS `adashi_test`;
+CREATE DATABASE IF NOT EXISTS `lumenauth_test`;

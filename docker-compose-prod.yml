@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-    adashi: &laravel-template
+    lumenauth: &laravel-template
       image: laravel:latest
       build:
         context: .
@@ -10,7 +10,7 @@ services:
           - "BUILD_ARGUMENT_ENV=prod"
           - "BUILD_ARGUMENT_DEBUG_ENABLED=false"
         dockerfile: ./Dockerfile
-      container_name: adashi
+      container_name: lumenauth
       expose:
         - 80
         - 443
@@ -21,15 +21,6 @@ services:
         - mysql
       links:
         - mysql
-
-    ### Cron tasks
-    supervisord:
-      <<: *laravel-template
-      container_name: supervisord
-      user: root
-      expose: []
-      ports: []
-      command: ["/usr/bin/supervisord"]
 
       mysql-db:
         image: mysql:5.7
