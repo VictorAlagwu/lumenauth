@@ -10,7 +10,7 @@ class UserServiceResponseDto
     public bool $status;
     public string $message;
     public ?array $data;
-    public ?string $token;
+    public ?bool $token;
     public ?string $token_type;
     public ?int $expires_in;
 
@@ -18,7 +18,7 @@ class UserServiceResponseDto
      * @param boolean $status
      * @param string $message
      * @param array|null $data
-     * @param string|null $token
+     * @param boolean|null $token
      * @param string|null $token_type
      * @param int|null $expires_in
      */
@@ -26,7 +26,7 @@ class UserServiceResponseDto
         bool $status,
         string $message,
         ?array $data = [],
-        ?string $token = null,
+        ?bool $token = null,
         ?string $token_type = null,
         ?int $expires_in = null
     ) {

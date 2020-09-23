@@ -41,6 +41,6 @@ class LoginController extends Controller
             'token_type' => $response->token_type,
             'expires_in' => $response->expires_in
         ];
-        return ApiResponse::responseSuccess($response->data, $response->message, $options);
+        return ApiResponse::responseSuccess($response->data ?? [], $response->message, $options);
     }
 }

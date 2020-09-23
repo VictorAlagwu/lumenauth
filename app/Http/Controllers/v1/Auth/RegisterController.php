@@ -33,7 +33,7 @@ class RegisterController extends Controller
             }
             $dto = new CreateDto($request->name, $request->email, $request->password);
             $user = $this->userService->register($dto);
-            return ApiResponse::responseCreated($user->data, $user->message);
+            return ApiResponse::responseCreated($user->data ?? [], $user->message);
         } catch (\Exception $e) {
             return ApiResponse::responseException($e, 400, 'Unable to register user');
         }
