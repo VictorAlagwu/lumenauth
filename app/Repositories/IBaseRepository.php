@@ -250,16 +250,7 @@ interface IBaseRepository
      */
     public function update($args, $id);
 
-    /**
-     * Update a entity in repository by where clause
-     *
-     * @param array $updateArgs
-     * @param array $where
-     * @return bool
-     * @throws RepositoryException
-     */
-    public function updateWhere(array $where, $updateArgs): bool;
-
+  
     /**
      * Delete a entity in repository by id
      *
@@ -270,15 +261,6 @@ interface IBaseRepository
     public function delete($id, bool $softDelete = false);
 
 
-    /**
-     * Delete multiple entities by given criteria.
-     *
-     * @param array $where
-     * @param bool  $softDelete
-     * @return int
-     */
-    public function deleteWhere(array $where, bool $softDelete = false);
-
 
     /**
      * Find data and return instance of self for chaining
@@ -288,19 +270,6 @@ interface IBaseRepository
      */
     public function where(array $where);
 
-    /**
-     * @param string $field
-     * @param array  $between
-     * @return mixed
-     */
-    public function whereBetween(string $field, array $between);
-
-    /**
-     * @param string $field
-     * @param array  $between
-     * @return mixed
-     */
-    public function orWhereBetween(string $field, array $between);
 
     /**
      * Find or Data and return instance of self for chaining

@@ -488,18 +488,7 @@ abstract class BaseRepository implements IBaseRepository
         return $model;
     }
 
-    public function updateWhere(array $where, $updateArgs): bool
-    {
-        $this->applyScope();
-
-        $this->applyConditions($where);
-
-        $deleted = $this->model->update($updateArgs);
-        $this->resetModel();
-
-        return $deleted;
-    }
-
+ 
 
     /**
      * @param      $id
@@ -569,29 +558,6 @@ abstract class BaseRepository implements IBaseRepository
         return $this;
     }
 
-    /**
-     * Delete multiple entities by given criteria.
-     *
-     * @param array $where
-     * @param bool  $softDelete
-     * @return bool|int|null
-     * @throws RepositoryException
-     * @throws \Exception
-     */
-    public function deleteWhere(array $where, bool $softDelete = false)
-    {
-        $this->applyScope();
-
-        $this->applyConditions($where);
-
-        $deleted = $this->model->delete();
-
-
-        $this->resetModel();
-
-        return $deleted;
-    }
-
 
     /**
      * Find data and return instance of self for chaining
@@ -605,29 +571,7 @@ abstract class BaseRepository implements IBaseRepository
         return $this;
     }
 
-    /**
-     * @param string $field
-     * @param array  $between
-     * @return $this
-     */
-    public function whereBetween(string $field, array $between)
-    {
-        $this->model = $this->model->whereBetween($field, $between);
-
-        return $this;
-    }
-
-    /**
-     * @param string $field
-     * @param array  $between
-     * @return $this
-     */
-    public function orWhereBetween(string $field, array $between)
-    {
-        $this->model = $this->model->orWhereBetween($field, $between);
-
-        return $this;
-    }
+   
 
     /**
      * Find data and return instance of self for chaining

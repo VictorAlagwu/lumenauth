@@ -6,12 +6,13 @@ use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Laravel\Lumen\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
 class AuthTest extends TestCase
 {
-    protected $client;
-    protected $token;
+    use DatabaseMigrations;
+
     public function setUp(): void
     {
         parent::setUp();
@@ -29,5 +30,10 @@ class AuthTest extends TestCase
 
         $this->post('api/v1/register', $data)
             ->seeStatusCode(201);
+    }
+
+    public function testUserCanLogin()
+    {
+        $this->markTestIncomplete();
     }
 }

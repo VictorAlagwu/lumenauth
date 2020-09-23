@@ -10,6 +10,7 @@ use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Validation\UnauthorizedException;
 use Illuminate\Validation\ValidationException;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -89,6 +90,10 @@ class Handler extends ExceptionHandler
                 'Error with a method call: ' . $exception->getMessage();
             return $this->exceptionError($exception, $message, 500);
         }
+        if ($exception instanceof UnauthorizedException) {
+            return ApiResponse::responseUnauthorized();
+        }
+
         if ($exception instanceof AuthenticationException) {
             $message =  (env('APP_ENV') === 'production') ?
                 'Unauthenticated' :
