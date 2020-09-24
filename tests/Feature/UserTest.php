@@ -29,7 +29,9 @@ class UserTest extends TestCase
 
     public function testUserIsMakingUnauthorizedRequest()
     {
-        $this->get('api/v1/user')->seeStatusCode(401);
-        // $this->assertEquals(401, $response->status());
+    
+        $this->get('api/v1/user');
+
+        $this->seeStatusCode(401);
     }
 }

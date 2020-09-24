@@ -33,10 +33,6 @@ class ApiResponse
         return self::respond($data, 'success', $message, 201, $options);
     }
 
-    public static function responseNoContent(array $data = [], ?string $message = "No content", array $options = []): JsonResponse
-    {
-        return self::respond($data, 'success', $message, 204, $options);
-    }
     public static function responseError(array $data = [], ?string $message = "Error encountered", int $statusCode = 400, array $options = []): JsonResponse
     {
         return self::respond($data, 'error', $message, $statusCode, $options);
@@ -45,11 +41,6 @@ class ApiResponse
     public static function responseUnauthorized(?string $message = 'Unauthorized', ?array $options = []): JsonResponse
     {
         return self::responseError([], $message, 401, $options);
-    }
-
-    public static function responseFobidden(string $message = 'Forbidden', array $options = []): JsonResponse
-    {
-        return self::responseError([], $message, 403, $options);
     }
 
     public static function responseValidationError(Validator $validator, string $message = null): JsonResponse

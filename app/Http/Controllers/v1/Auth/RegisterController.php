@@ -21,21 +21,17 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-        try {
-            $validator = Validator::make($request->all(), [
-                'name' => 'required|string',
-                'email' => 'required|email|unique:users',
-                'password' => 'required',
-            ]);
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string',
+            'email' => 'required|email|unique:users',
+            'password' => 'required',
+        ]);
 
-            if ($validator->fails()) {
-                return ApiResponse::responseValidationError($validator);
-            }
-            $dto = new CreateDto($request->name, $request->email, $request->password);
-            $user = $this->userService->register($dto);
-            return ApiResponse::responseCreated($user->data ?? [], $user->message);
-        } catch (\Exception $e) {
-            return ApiResponse::responseException($e, 400, 'Unable to register user');
+        if ($validator->fails()) {
+            return ApiResponse::responseValidationError($validator);
         }
+        $dto = new CreateDto($request->name, $request->email, $request->password);
+        $user = $this->userService->register($dto);
+        return ApiResponse::responseCreated($user->data ?? [], $user->message);
     }
 }
