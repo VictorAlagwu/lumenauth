@@ -273,24 +273,7 @@ abstract class BaseRepository implements IBaseRepository
     }
 
 
-    /**
-     * Find data by excluding multiple values in one field
-     *
-     * @param       $field
-     * @param array $values
-     * @param array $columns
-     * @return mixed
-     * @throws RepositoryException
-     */
-    public function findWhereNotIn($field, array $values, $columns = ['*'])
-    {
-        $this->applyScope();
-        $model = $this->model->whereNotIn($field, $values)->get($columns);
-        $this->resetModel();
-
-        return $model;
-    }
-
+  
     /**
      * Order collection by a given column
      *
@@ -317,50 +300,6 @@ abstract class BaseRepository implements IBaseRepository
         return $this;
     }
 
-    /**
-     * Load relation with closure
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     *
-     * @return $this
-     */
-    public function whereHas($relation, $closure)
-    {
-        $this->model = $this->model->whereHas($relation, $closure);
-
-        return $this;
-    }
-
-    /**
-     * Load relation with closure
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     *
-     * @return $this
-     */
-    public function orWhereHas($relation, $closure)
-    {
-        $this->model = $this->model->orWhereHas($relation, $closure);
-
-        return $this;
-    }
-
-    /**
-     * Load relation with closure
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     *
-     * @return $this
-     */
-    public function whereDoesntHave($relation, \Closure $closure = null)
-    {
-        $this->model = $this->model->whereDoesntHave($relation, $closure);
-
-        return $this;
-    }
 
     /**
      * Check if entity has relation
@@ -542,22 +481,6 @@ abstract class BaseRepository implements IBaseRepository
         return $model;
     }
 
-    public function having(string $column, string $operator, string $value)
-    {
-
-        $this->model = $this->model->having($column, $operator, $value);
-
-        return $this;
-    }
-
-    public function havingRaw(string $expression)
-    {
-
-        $this->model = $this->model->havingRaw($expression);
-
-        return $this;
-    }
-
 
     /**
      * Find data and return instance of self for chaining
@@ -571,20 +494,6 @@ abstract class BaseRepository implements IBaseRepository
         return $this;
     }
 
-   
-
-    /**
-     * Find data and return instance of self for chaining
-     * @param string $where
-     * @param array  $params
-     * @return mixed
-     */
-    public function whereRaw(string $where, array $params = [])
-    {
-        $this->model = $this->model->whereRaw($where, $params);
-
-        return $this;
-    }
 
 
     /**
@@ -606,18 +515,6 @@ abstract class BaseRepository implements IBaseRepository
     }
 
 
-    /** 
-     * Add limit to results
-     *
-     * @param $limit
-     * @return IBaseRepository
-     */
-    public function limit($limit): IBaseRepository
-    {
-        $this->model = $this->model->limit($limit);
-
-        return $this;
-    }
 
     /**
      * Apply scope in current Query

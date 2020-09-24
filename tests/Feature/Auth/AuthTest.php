@@ -47,12 +47,11 @@ class AuthTest extends TestCase
 
     public function testUserCanLogin()
     {
-        $this->markTestIncomplete();
         $user = UserFactory::new()->create();
 
         $this->actingAs($user)->post('api/v1/login', [
             'email' => $user->email,
-            'password' => $user->password
+            'password' => 'secret'
         ]);
         $this->seeStatusCode(200);
     }

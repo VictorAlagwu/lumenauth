@@ -65,22 +65,6 @@ interface IBaseRepository
     public function find($id, $columns = ['*']);
 
     /**
-     * Having
-     * @param $column
-     * @param $operator
-     * @param $value
-     * @return mixed
-     */
-    public function having(string $column, string $operator, string $value);
-
-    /**
-     * Having raw
-     * @param string $expression
-     * @return mixed
-     */
-    public function havingRaw(string $expression);
-
-    /**
      * Retrieve all data of repository
      *
      * @param array $columns
@@ -138,17 +122,7 @@ interface IBaseRepository
     public function findWhere(array $where, $columns = ['*']);
 
 
-    /**
-     * Find data by excluding multiple values in one field
-     *
-     * @param       $field
-     * @param array $values
-     * @param array $columns
-     *
-     * @return mixed
-     */
-    public function findWhereNotIn($field, array $values, $columns = ['*']);
-
+  
     /**
      * Order collection by a given column
      *
@@ -164,36 +138,6 @@ interface IBaseRepository
      * @return mixed
      */
     public function orderByRaw($rawExpression);
-
-    /**
-     * Load relation with closure
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     *
-     * @return $this
-     */
-    public function whereHas($relation, $closure);
-
-    /**
-     * Load relation with closure
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     *
-     * @return $this
-     */
-    public function orWhereHas($relation, $closure);
-
-    /**
-     * Load relation with closure
-     *
-     * @param string   $relation
-     * @param \Closure $closure
-     *
-     * @return $this
-     */
-    public function whereDoesntHave($relation, \Closure $closure = null);
 
     /**
      * Check if entity has relation
@@ -278,14 +222,6 @@ interface IBaseRepository
      */
     public function orWhere(array $where);
 
-    /**
-     * Find data and return instance of self for chaining using raw query
-     *
-     * @param string $where
-     * @param array  $params
-     * @return mixed
-     */
-    public function whereRaw(string $where, array $params = []);
 
     /**
      * Retrieve results from query
@@ -295,14 +231,7 @@ interface IBaseRepository
      */
     public function get($columns = ['*']);
 
-    /**
-     * Limit results
-     *
-     * @param $limit
-     * @return IBaseRepository
-     */
-    public function limit($limit): IBaseRepository;
-
+ 
  
     /**
      * Find first model where conditions are met
