@@ -10,3 +10,4 @@
 * Add app_key
 * Run `php artisan jwt:secret`
 
+https://documenter.getpostman.com/view/2890568/TVKEXwuR
